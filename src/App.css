@@ -1,0 +1,66 @@
+.main{
+    display: flex;
+    flex-direction: column;
+}
+.App{
+    background: url('./unnamed.jpg') no-repeat;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+.span{
+    z-index: 90;
+    color: white;
+    font-size: 50px;
+}
+.div-info{
+    display: flex;
+    margin-top: 50px;
+    width: 600px;
+    height: 150px;
+    justify-content: center;
+    flex-wrap: wrap
+}
+.div-modal{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    font-size: 16px;
+}
+.div-p{
+    display: flex;
+    justify-content: space-between
+}
+.paragrafoLigado{
+    margin-right: 230px
+}
+.paragrafoResposta{
+    margin-right: 250px
+}
+.paragrafoConectado{
+    margin-right: 200px
+}
+.paragrafoDesc{
+    margin-right: 185px
+}
+.paragrafoTP{
+    margin-right: 280px
+}
+.paragrafoFirmware{
+    margin-right: 260px
+}
+.grafico{
+    padding: 20px;
+    justify-content: space-between;
+    display: flex;
+    text-align: end;
+    margin-bottom: 10px;
+}
+.div-spin{ 
+    display: flex;
+    justify-content: center
+}
+.teste{
+    background-color: green !important
+}
