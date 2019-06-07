@@ -1,14 +1,245 @@
-.main{
+.App{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.intputIp{
+    width: 100%;
+    height: 60px;
+    padding: 5px;
+    border-radius:10px;
+    box-shadow: 0 2px 3px #0d0080;
+    color: #0d0080;
+    border: 1px solid #0d0080;
+    outline: none;
+    margin-top: 2px;
+    text-align: center;
+}
+.intputPort{
+    width: calc(90% - 100px);
+    height: 60px;
+    padding: 5px;
+    border-radius:10px;
+    box-shadow: 0 2px 3px #0d0080;
+    color: #0d0080;
+    border: 1px solid #0d0080;
+    outline: none;
+    margin-top: 2px;
+    text-align: center;
+}
+.div-spin{ 
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.ant-spin-dot i{
+    background-color: white !important;
+}
+.div-modal{
+    margin-top: 10px !important;
     display: flex;
     flex-direction: column;
 }
-.App{
-    background: url('./unnamed.jpg') no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+.div-p{
+    display: flex;
+    justify-content: space-between !important;
 }
+.grafico{
+    justify-content: center;
+    display: flex;
+    margin-bottom: 10px;
+}
+.modalParagrafo{
+    color: black;
+    /* font-weight: bold; */
+}
+.ant-modal-title{
+    color: black !important;
+    font-weight: bold !important;
+    font-size: 18px !important;
+    text-align: center;
+}
+.div-modal-reset{
+    display: flex;
+    justify-content: center;
+}
+.intputreset{
+    width: 200px;
+    height: 40px;
+    padding: 5px;
+    border-radius:10px;
+    box-shadow: 0 2px 3px #0d0080;
+    color: #0d0080;
+    border: 1px solid #0d0080;
+    outline: none;
+    margin-top: 2px;
+    text-align: center;
+    font-size: 16px;
+}
+@media only screen and (orientation: portrait) and (min-width: 375px) and (max-width: 659px){
+    .group{
+        width: 90% !important;
+    }
+    .intputIp{
+        font-size: 30px;
+    }
+    .groupPort{
+        width: 90% !important;
+        display: flex;
+        justify-content: space-between;
+    }
+    .intputPort{
+        font-size: 30px;
+    }
+    .row{
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (orientation: portrait) and (max-width: 374px){
+    .group{
+        width: 90% !important;
+    }
+    .intputIp{
+        height: 45px;
+        font-size: 20px;
+    }
+    .groupPort{
+        width: 90% !important;
+        display: flex;
+        justify-content: space-between;
+    }
+    .intputPort{
+        height: 45px;
+        font-size: 20px;
+    }
+    .row{
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+/* @media only screen and (orientation: landscape)and (min-width: 650px) and (max-width: 999px){
+    .group{
+        width: 100%;
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+        display: flex;
+        justify-content: space-between;
+    }
+    .intputIp{
+        width: calc(100% - 350px) !important;
+        font-size: 30px;
+    }
+    .groupPort{
+        width: 100%;
+        margin-left: 5% !important;
+        margin-right: 5% !important;
+        display: flex;
+        justify-content: space-between;
+    }
+    .row{
+        display: flex !important;
+        justify-content: space-between !important;
+        margin: 0 !important;
+     
+    }
+    .intputPort{
+        font-size: 30px;
+    }
+} */
+
+@media only screen and (orientation: landscape)and (max-width: 659px){
+    .group{
+        width: 90% !important;
+    }
+    .intputIp{
+        font-size: 30px;
+    }
+    .groupPort{
+        width: 90% !important;
+        display: flex;
+        justify-content: space-between;
+    }
+    .intputPort{
+        font-size: 30px;
+    }
+    .row{
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (min-width: 660px){
+    .App{
+        padding: 15px;
+        display: flex;
+        flex-direction: row !important;
+        align-items: center;
+        justify-content: center;
+    }
+    .intputIp{
+        width: 300px !important;
+        font-size: 30px;
+    }
+    .intputPort{
+        width: 300px !important;
+        font-size: 30px;
+    }
+    .desktop{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        width: 75% !important;
+        justify-content: center;
+        align-items: center;
+    }
+    .groupDesk{
+        display: flex;
+        margin: 10px;
+    }
+    .modalParagrafo{
+        font-size: 18px !important;
+    }
+    .intputreset{
+        width: 400px;
+        height: 50px;
+        font-size: 18px;
+    }
+}
+/* .App{
+    width: 100vh !important;
+    height: 100vh !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row{
+    width:75% !important;
+    margin: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+.intputIp{
+    width: 100%;
+    height: 60px;
+    padding: 5px;
+    border-radius:10px;
+    box-shadow: 0 2px 3px #0d0080;
+    font-size: 30px;
+    color: #0d0080;
+    border: 1px solid #0d0080;
+    outline: none;
+    margin-top: 2px;
+    text-align: start;
+} */
+/* }
 .span{
     z-index: 90;
     color: white;
@@ -63,4 +294,4 @@
 }
 .teste{
     background-color: green !important
-}
+} */
