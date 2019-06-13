@@ -41,9 +41,15 @@
     display: flex;
     flex-direction: column;
 }
+.div-p:hover{
+    background-color: lightblue;
+    border-radius: 5px !important;
+}
 .div-p{
     display: flex;
     justify-content: space-between !important;
+    padding-left: 7px;
+    padding-right: 7px;
 }
 .grafico{
     justify-content: center;
@@ -62,9 +68,17 @@
 }
 .div-modal-reset{
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
+.labelReset{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 25px !important;
+}
 .intputreset{
+    align-self: center;
     width: 200px;
     height: 40px;
     padding: 5px;
@@ -77,221 +91,165 @@
     text-align: center;
     font-size: 16px;
 }
-@media only screen and (orientation: portrait) and (min-width: 375px) and (max-width: 659px){
-    .group{
-        width: 90% !important;
-    }
-    .intputIp{
-        font-size: 30px;
-    }
-    .groupPort{
-        width: 90% !important;
-        display: flex;
-        justify-content: space-between;
-    }
-    .intputPort{
-        font-size: 30px;
-    }
-    .row{
-        padding: 15px;
-        display: flex;
-        justify-content: space-between;
-    }
+.ant-progress-text{
+    color: black !important;
 }
 
-@media only screen and (orientation: portrait) and (max-width: 374px){
-    .group{
-        width: 90% !important;
-    }
-    .intputIp{
-        height: 45px;
+.ant-btn-primary{
+    background-color: #0d0080 !important;
+    border: #0d0080 !important;
+}
+.ant-btn-primary:hover{
+    background-color: #0071f1 !important;
+    border: #0071f1 !important;
+}
+
+.div-modal-ping {
+    display: flex;
+    flex-direction: column;
+}
+.ping-Data-headerPrimary{
+    align-self: center;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    margin: 0 10px 0 10px;
+}
+.ping-Data-labelPrimary{
+    color: black;
+}
+.div-ping-DataHeader{
+    display: flex;
+    justify-content: space-between;
+}
+.ping-Data-headerSecundary{
+    color: green;
+}
+.ping-Data-headerSecundaryValue{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+ .div-graph{
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 380px){
+    .ping-Data-headerSecundaryValue{
         font-size: 20px;
     }
-    .groupPort{
-        width: 90% !important;
-        display: flex;
-        justify-content: space-between;
+    .ping-Data-headerSecundary{
+        text-align: center;
     }
-    .intputPort{
-        height: 45px;
-        font-size: 20px;
-    }
-    .row{
-        padding: 15px;
-        display: flex;
-        justify-content: space-between;
-    }
-}
-
-/* @media only screen and (orientation: landscape)and (min-width: 650px) and (max-width: 999px){
-    .group{
-        width: 100%;
-        margin-left: 10px !important;
-        margin-right: 10px !important;
-        display: flex;
-        justify-content: space-between;
-    }
-    .intputIp{
-        width: calc(100% - 350px) !important;
-        font-size: 30px;
-    }
-    .groupPort{
-        width: 100%;
-        margin-left: 5% !important;
-        margin-right: 5% !important;
-        display: flex;
-        justify-content: space-between;
-    }
-    .row{
-        display: flex !important;
-        justify-content: space-between !important;
-        margin: 0 !important;
-     
-    }
-    .intputPort{
-        font-size: 30px;
-    }
-} */
-
-@media only screen and (orientation: landscape)and (max-width: 659px){
-    .group{
-        width: 90% !important;
-    }
-    .intputIp{
-        font-size: 30px;
-    }
-    .groupPort{
-        width: 90% !important;
-        display: flex;
-        justify-content: space-between;
-    }
-    .intputPort{
-        font-size: 30px;
-    }
-    .row{
-        padding: 15px;
-        display: flex;
-        justify-content: space-between;
-    }
-}
-
-@media only screen and (min-width: 660px){
-    .App{
-        padding: 15px;
-        display: flex;
-        flex-direction: row !important;
-        align-items: center;
-        justify-content: center;
-    }
-    .intputIp{
-        width: 300px !important;
-        font-size: 30px;
-    }
-    .intputPort{
-        width: 300px !important;
-        font-size: 30px;
-    }
-    .desktop{
-        margin-top: 30px;
+    .div-ping-DataHeader{
         display: flex;
         flex-direction: column;
-        width: 75% !important;
-        justify-content: center;
-        align-items: center;
     }
-    .groupDesk{
-        display: flex;
-        margin: 10px;
-    }
-    .modalParagrafo{
-        font-size: 18px !important;
-    }
-    .intputreset{
-        width: 400px;
-        height: 50px;
+    .ping-Data-headerPrimary{
         font-size: 18px;
     }
 }
-/* .App{
-    width: 100vh !important;
-    height: 100vh !important;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+@media only screen and (max-width: 300px){
+    .group{
+        width: 210px !important;
+    }
+    .intputIp{
+        height: 45px;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .row{
+        padding-left: 15px;
+        padding-right: 15px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .ModalReset{
+        width: 280px !important;
+    }
 }
 
-.row{
-    width:75% !important;
-    margin: 15px;
-    display: flex;
-    justify-content: space-around;
+@media only screen and (min-width: 301px) and (max-width: 374px){
+    .group{
+        width: 260px !important;
+    }
+    .intputIp{
+        height: 45px;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .row{
+        padding-left: 15px;
+        padding-right: 15px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .ModalStatus{
+        width: 280px !important;
+    }
+    .ModalReset{
+        width: 300px !important;
+    }
 }
-.intputIp{
-    width: 100%;
-    height: 60px;
-    padding: 5px;
-    border-radius:10px;
-    box-shadow: 0 2px 3px #0d0080;
-    font-size: 30px;
-    color: #0d0080;
-    border: 1px solid #0d0080;
-    outline: none;
-    margin-top: 2px;
-    text-align: start;
-} */
-/* }
-.span{
-    z-index: 90;
-    color: white;
-    font-size: 50px;
+@media only screen and (min-width: 375px) and (max-width: 799px){
+    .group{
+        width: 310px !important;
+    }
+    .intputIp{
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    .row{
+        padding-left: 15px;
+        padding-right: 15px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .ModalStatus{
+        width: 320px !important;
+    }
+    .ModalReset{
+        width: 375px !important;
+    }
 }
-.div-info{
-    display: flex;
-    margin-top: 50px;
-    width: 600px;
-    height: 150px;
-    justify-content: center;
-    flex-wrap: wrap
+
+@media only screen and (min-width: 800px){
+    .group{
+        width: 615px !important;
+    }
+    .intputIp{
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    .rowMaster{
+        display:flex;
+        flex-direction: row;
+    }
+
+    .row{
+        display: flex;
+        flex-direction: row;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .modalParagrafo{
+        font-size: 18px;
+    }
+    
+    #rcDialogTitle0{
+        font-size: 30px !important;
+    }
+    .ModalStatus{
+        width: 380px !important;
+    }
 }
-.div-modal{
-    display: flex;
-    flex-direction: column;
-    align-items:flex-start;
-    font-size: 16px;
-}
-.div-p{
-    display: flex;
-    justify-content: space-between
-}
-.paragrafoLigado{
-    margin-right: 230px
-}
-.paragrafoResposta{
-    margin-right: 250px
-}
-.paragrafoConectado{
-    margin-right: 200px
-}
-.paragrafoDesc{
-    margin-right: 185px
-}
-.paragrafoTP{
-    margin-right: 280px
-}
-.paragrafoFirmware{
-    margin-right: 260px
-}
-.grafico{
-    padding: 20px;
-    justify-content: space-between;
-    display: flex;
-    text-align: end;
-    margin-bottom: 10px;
-}
-.div-spin{ 
-    display: flex;
-    justify-content: center
-}
-.teste{
-    background-color: green !important
-} */
+
+
+

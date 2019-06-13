@@ -1,7 +1,7 @@
 @media only screen and (min-width: 375px){
     .button{
         margin-top: 2px;
-        width: 100px;
+        width: 150px;
         height: 60px;
         cursor: pointer;
         box-shadow: 0 2px 2px #150061 !important;
@@ -14,15 +14,16 @@
         background-color: #ffffff;
     }
 }
-@media only screen and (orientation: landscape){
+
+@media only screen and (min-width: 301px) and (max-width: 374px){
     .button{
         margin-top: 2px;
-        width: 100px;
+        width: 125px;
         height: 60px;
         cursor: pointer;
         box-shadow: 0 2px 2px #150061 !important;
         outline: none;
-        font-size: 20px;
+        font-size: 17px;
         font-weight: bold;
         border-radius: 10px;
         margin-left: 3px;
@@ -30,11 +31,12 @@
         background-color: #ffffff;
     }
 }
-@media only screen and (max-width: 374px){
+
+@media only screen and (max-width: 300px){
     .button{
         margin-top: 2px;
-        width: 80px;
-        height: 45px;
+        width: 100px;
+        height: 60px;
         cursor: pointer;
         box-shadow: 0 2px 2px #150061 !important;
         outline: none;
